@@ -1,0 +1,281 @@
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 0 10%;
+}
+
+/* header design starts */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading>h2{
+    margin-left: 0%;
+}
+
+.navbar>nav>a{
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* header design ends */
+
+/* first section design starts */
+
+.first-section{
+    display: flex;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.half{
+    width: 50%;
+}
+
+.first-half{
+    margin-top: 5%;
+}
+
+.half>h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.half>p{
+    margin-left: 0;
+}
+
+.half>a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(173, 19, 83);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.half>a:hover{
+    background-color: rgb(90, 197, 205);
+    padding: 10px 17px;
+}
+
+.half>img{
+    width: 70%;
+    margin-left: 25%;
+    transition: 0.5s;
+}
+
+.half>img:hover{
+    transform: scale(1.3,1.3);
+}
+
+
+
+/* first section design ends */
+
+
+/* logo design starts */
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* logo design ends */
+
+
+/* popular collection design starts */
+
+.collection{
+    margin: 5em 0;
+}
+
+.collection>h2{
+    text-align: center;
+    margin-bottom: 2em 0;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: 2em;
+}
+
+.products>.product{
+    border-radius: 5px;
+    box-shadow: 0 0 20px gray;
+}
+
+.products>.product>img{
+    width: 90%;
+}
+
+.products>.product>p>.fas{
+    color: rgb(0, 204, 255);
+}
+
+.products>.product>p{
+    color: gray;
+    margin-left: 1em;
+}
+
+.products>.product> img, h2, h3{
+    margin: 1em;
+}
+
+.collection>a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(224, 44, 109);
+    display: block;
+    text-align: right;
+}
+
+/* popular collection design ends */
+
+
+/* last section design starts */
+
+.last-section{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.info{
+    width: 50%;
+    margin: 3em 0;
+}
+
+.info>p{
+    text-align: justify;
+}
+
+.info>a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(224, 44, 109);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+ 
+.info>h2, img, p, a{
+    margin-left: 0%;
+}
+
+.youtube{
+    width: 40%;
+}
+
+.youtube>h2{
+    text-align: center;
+}
+
+.youtube>iframe{
+    box-shadow: 0 0 25px gray;
+}
+
+/* last section design endss */
+
+
+/* footer design starts */
+
+footer{
+    background-color: rgb(10, 8, 38);
+    margin-top: 1em;
+}
+
+.footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.footer-info>h2{
+    margin-bottom: 0%;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.footer-social>.social{
+    margin-left: 1em;
+}
+
+/* footer design ends */
+
+
+/*------------------
+ design for tabs 
+ ------------------ */
+
+ @media only screen and (max-width: 992px) {
+
+    .navbar>nav>a{
+        margin-left: 2px;
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);}
+
+        .youtube>iframe{
+            width: 100%;
+        }
+     
+ }
+
+
+ /*---------------------
+ design for mobile
+ ----------------------*/
+
+ @media only screen and (max-width: 576px) {
+
+    header>.navbar{
+        display: none;
+    }
+
+    .first-section{
+        flex-direction: column;
+    }
+
+    .first-section>.half{
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .logo-section{
+        display: none;
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);}
+
+     .last-section>.info{
+         width: 100%;
+     }   
+
+     .last-section>.youtube{
+         display: none;
+     }
+ }
